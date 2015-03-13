@@ -1,17 +1,20 @@
 package StepDefinition;
 
+import java.util.List;
 
-
+import javax.swing.Spring;
+import java.util.List;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-
 import SeleniumPages.HomePage;
 import cucumber.api.java.en.Then;
 import cucumberTest.AbstractPageStepDefination;
 
 public class HomePageSteps extends AbstractPageStepDefination {
 	WebDriver driver = getDriver();
+	List<String> ActualProductImages;
+    
 	@Then("^The user Can See The Logo of our website$")
 	public void the_user_Can_See_The_Logo_of_our_website() throws Throwable {
 	    
@@ -31,7 +34,7 @@ public class HomePageSteps extends AbstractPageStepDefination {
 	    // Write code here that turns the phrase above into concrete actions
 		HomePage homePage=PageFactory.initElements(driver, HomePage.class);
 		Assert.assertTrue(homePage.IsMainMenuDisplayed());
-	   
+	    
 	}
-
+	
 }
