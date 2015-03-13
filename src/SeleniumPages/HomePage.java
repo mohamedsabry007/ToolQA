@@ -15,6 +15,9 @@ public class HomePage {
 	@FindBy(css="#logo")
 	private WebElement _Logo;
 	
+	@FindBy(css="#wrapper")
+	private WebElement _container;
+	
 	public void NavigateToLogInPage() 
 	{
 		this._UserLogin.click();
@@ -32,6 +35,10 @@ public class HomePage {
 	public boolean isLogoExist()
 	{
 		return _Logo.isDisplayed();
+	}
+	public boolean isSlideShowExist()
+	{
+		return _container.isDisplayed();
 	}
 		
 }

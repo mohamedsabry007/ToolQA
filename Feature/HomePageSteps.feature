@@ -5,3 +5,7 @@ Feature: To ensure that Home Page functionality
 
   Scenario: Check Logo
     Then The user Can See The Logo of our website
+
+  Scenario: Check That Slide Show is Displayed
+    Then The User Can See The Slide Show at the home Page
+    
