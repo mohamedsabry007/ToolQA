@@ -12,6 +12,8 @@ public class HomePage {
 	@FindBy(xpath = ".//*[@id='account']/a")
     private WebElement _UserLogin;
 	
+	@FindBy(css="#logo")
+	private WebElement _Logo;
 	
 	public void NavigateToLogInPage() 
 	{
@@ -27,5 +29,9 @@ public class HomePage {
         WebDriverWait wait = new WebDriverWait(driver,30);
         wait.until(pageLoadCondition);
     }
+	public boolean isLogoExist()
+	{
+		return _Logo.isDisplayed();
+	}
 		
 }
