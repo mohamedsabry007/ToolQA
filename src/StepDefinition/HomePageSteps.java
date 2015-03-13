@@ -25,5 +25,13 @@ public class HomePageSteps extends AbstractPageStepDefination {
 		HomePage homePage=PageFactory.initElements(driver, HomePage.class);
 		Assert.assertTrue(homePage.isSlideShowExist());
 	}
+	
+	@Then("^The user Can See The Main Menu at the home Page$")
+	public void the_user_Can_See_The_Main_Menu_at_the_home_Page() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		HomePage homePage=PageFactory.initElements(driver, HomePage.class);
+		Assert.assertTrue(homePage.IsMainMenuDisplayed());
+	   
+	}
 
 }

@@ -18,6 +18,9 @@ public class HomePage {
 	@FindBy(css="#wrapper")
 	private WebElement _container;
 	
+	@FindBy(css="#main-nav")
+	private WebElement _MainMenu;
+	
 	public void NavigateToLogInPage() 
 	{
 		this._UserLogin.click();
@@ -39,6 +42,11 @@ public class HomePage {
 	public boolean isSlideShowExist()
 	{
 		return _container.isDisplayed();
+	}
+	public boolean IsMainMenuDisplayed()
+	
+	{
+		return _MainMenu.isDisplayed();
 	}
 		
 }
