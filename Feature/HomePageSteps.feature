@@ -13,3 +13,5 @@ Feature: To ensure that Home Page functionality
   Scenario: Check that the Main Menu is displayed
     Then The user Can See The Main Menu at the home Page
 
+  Scenario: Check that the Main Menu is displayed
+    Then The user Can See The Main Menu at the home Page
