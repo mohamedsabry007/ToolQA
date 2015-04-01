@@ -21,10 +21,13 @@ public class HomePage {
 	@FindBy(css="#main-nav")
 	private WebElement _MainMenu;
 	
+	
+	
 	public void NavigateToLogInPage() 
 	{
 		this._UserLogin.click();
 	}
+	
 	public void  DocumentReady(WebDriver driver) {
         ExpectedCondition<Boolean> pageLoadCondition = new
             ExpectedCondition<Boolean>() {
@@ -35,10 +38,12 @@ public class HomePage {
         WebDriverWait wait = new WebDriverWait(driver,30);
         wait.until(pageLoadCondition);
     }
+	
 	public boolean isLogoExist()
 	{
 		return _Logo.isDisplayed();
 	}
+	
 	public boolean isSlideShowExist()
 	{
 		return _container.isDisplayed();
