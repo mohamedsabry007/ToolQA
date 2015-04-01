@@ -3,11 +3,15 @@ package StepDefinition;
 import java.util.List;
 
 import javax.swing.Spring;
+
 import java.util.List;
+
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+
 import SeleniumPages.HomePage;
+import cucumber.api.PendingException;
 import cucumber.api.java.en.Then;
 import cucumberTest.AbstractPageStepDefination;
 
@@ -34,6 +38,13 @@ public class HomePageSteps extends AbstractPageStepDefination {
 	    // Write code here that turns the phrase above into concrete actions
 		HomePage homePage=PageFactory.initElements(driver, HomePage.class);
 		Assert.assertTrue(homePage.IsMainMenuDisplayed());
+	}
+   @Then("^The user Will See The Logo$")
+	public void the_user_Will_See_The_Logo() throws Throwable {
+		    // Write code here that turns the phrase above into concrete actions
+	   HomePage homePage=PageFactory.initElements(driver, HomePage.class);
+	   Assert.assertTrue(homePage.isLogoExist());
+		
 	    
 	}
 	
