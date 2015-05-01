@@ -2,16 +2,10 @@ package StepDefinition;
 
 import java.util.List;
 
-import javax.swing.Spring;
-
-import java.util.List;
-
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-
 import SeleniumPages.HomePage;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Then;
 import cucumberTest.AbstractPageStepDefination;
 
